@@ -8,7 +8,11 @@
   <!-- End Google Tag Manager -->
 <script>
   window.dataLayer = window.dataLayer || [];
+    dataLayer.push({
+    'user_id': 'USER_ID'
+  });
   function gtag(){dataLayer.push(arguments);}
+
   gtag('js', new Date());
   gtag('user_id', 'hogehoge-sandayo');
   gtag('config', 'GTM-KDN32X6K', {'user_id':"hogehoge"});
