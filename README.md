@@ -16,7 +16,7 @@ hugo
 hugo server 
 ```
 
-If you access http://localhost:1313, you can do. 
+you can access http://localhost:1313
 
 1. Host on AWS Amplify 
 
