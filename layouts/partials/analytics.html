@@ -9,16 +9,17 @@
 <script>
   window.dataLayer = window.dataLayer || [];
     dataLayer.push({
-    'user_id': 'USER_ID'
+    'app_user_id': 'USER_ID'
   });
   // function gtag(){dataLayer.push(arguments);}
 
 
-  // gtag('js', new Date());
-  gtag('event', 'UserId', {user_id_2:'hogehoge'});
-  gtag('set', 'user_data', {
-    "email": "hogehoge@example.com",
-    "phone_number": "+11231234567"
-    });
-  // gtag('config', 'GTM-KDN32X6K', {'user_id':"hogehoge"});
+  gtag('js', new Date());
+  gtag('set', { 'app_user_id': 'hogehoge' });
+  gtag("event", "UserId", { 'user_properties': {'app_user_id':'hogehoge'}, 'send_to': "G-88M2Y6KGCP"})
+  // gtag('set', 'user_data', {
+  //   "email": "hogehoge@example.com",
+  //   "phone_number": "+11231234567"
+  //   });
+  gtag('config', 'G-88M2Y6KGCP', { 'user_properties': {'app_user_id':'hogehoge'}});
 </script>
