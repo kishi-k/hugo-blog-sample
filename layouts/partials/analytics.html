@@ -1,25 +1,29 @@
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KDN32X6K');</script>
-  <!-- End Google Tag Manager -->
 <script>
   window.dataLayer = window.dataLayer || [];
-    dataLayer.push({
+  dataLayer.push({
     'app_user_id': 'USER_ID'
   });
   // function gtag(){dataLayer.push(arguments);}
-
-
-  gtag('js', new Date());
-  gtag('set', { 'app_user_id': 'hogehoge' });
-  gtag("event", "UserId", { 'user_properties': {'app_user_id':'hogehoge'}, 'send_to': "G-88M2Y6KGCP"})
-  // gtag('set', 'user_data', {
+  // gtag('js', new Date());
+  // gtag('set', { 'app_user_id': 'hogehoge' });
+  // gtag("event", "UserId", { 'app_user_id': 'hogehoge'})
+  // // gtag('set', 'user_data', {
   //   "email": "hogehoge@example.com",
   //   "phone_number": "+11231234567"
   //   });
-  gtag('config', 'G-88M2Y6KGCP', { 'user_properties': {'app_user_id':'hogehoge'}});
+  // gtag('config', 'G-88M2Y6KGCP', { 'user_properties': { 'app_user_id': 'hogehoge' } });
+</script>
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-KDN32X6K');</script>
+<!-- End Google Tag Manager -->
+
+<script>
+dataLayer.push({'event':'UserId', 'app_user_id': 'USER_ID'})
 </script>
